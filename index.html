@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiscosFM</title>
-    <link rel="stylesheet" href="style/variables.css">
     <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/variables.css">
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/aside.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0&icon_names=home" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
     
 </head>
@@ -19,35 +24,53 @@
             <div class="item-container">
                 <i class="fa-solid fa-bullseye" style="color: rgb(0, 0, 0);"></i>
             </div>
-            <p class="marca">DiscosFM</p>
-            <p class="light">Reimagine</p>
+            <div class="p-header">
+                <p class="marca">DISCOFM</p>
+                <p class="light">REIMAGINE</p>
+                
+            </div>
         </header>
 
-        <div class="searchbox-nav">
-            <i class="fa-brands fa-sistrix" style="color: rgb(0, 0, 0);"></i>
-            <input class="quick-search" type="search">
-        </div>
+        <a class="pesquisa-rapida-link" href="#">
+            <button class="searchbox-nav">
+                <i class="fa-brands fa-sistrix"></i>
+                <p class="quick-search">Quick search</p>
+                <p class="ctrl">Ctrl+K</p>
+            </button>
+        </a>
         <nav>
-            <button class="nav">
-                <i class="fa-solid fa-house" style="color: rgb(0, 0, 0);"></i>
-                <p class="p-nav">Home</p>
-            </button>
-            <button class="nav">
-                <i class="fa-solid fa-bullseye" style="color: rgb(0, 0, 0);"></i>
-                <p class="p-nav">Coleção</p>
-            </button>
-            <button class="nav">
-                <i class="fa-regular fa-heart" style="color: rgb(0, 0, 0);"></i>
-                <p class="p-nav">Wantlist</p>
-            </button>
-            <button class="nav">
-                <i class="fa-brands fa-magento" style="color: rgb(0, 0, 0);"></i>
-                <p class="p-nav">Marketplace</p>
-            </button>
-            <button class="nav">
-                <i class="fa-solid fa-gear" style="color: rgb(0, 0, 0);"></i>
-                <p class="p-nav">Settings</p>
-            </button>
+            <ul>
+                <li>
+                    <button class="nav">
+                        <i class="fa-solid fa-house" style="color: rgb(0, 0, 0);"></i>
+                        <p class="p-nav">Home</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="nav">
+                        <i class="fa-solid fa-bullseye" style="color: rgb(0, 0, 0);"></i>
+                        <p class="p-nav">Coleção</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="nav">
+                        <i class="fa-regular fa-heart" style="color: rgb(0, 0, 0);"></i>
+                        <p class="p-nav">Wantlist</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="nav">
+                        <i class="fa-brands fa-magento" style="color: rgb(0, 0, 0);"></i>
+                        <p class="p-nav">Marketplace</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="nav">
+                        <i class="fa-solid fa-gear" style="color: rgb(0, 0, 0);"></i>
+                        <p class="p-nav">Settings</p>
+                    </button>
+                </li>
+            </ul>
         </nav>
     </aside>
 
