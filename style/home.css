@@ -1,0 +1,11 @@
+section.direita{
+    
+    width: 100vw;
+    padding: 80px;
+    
+}
+
+section.direita div.home{
+    background-color: var(--background-color);
+    
+}
