@@ -74,3 +74,8 @@ section.direita div.home header.main div.usuario-utilites-header button.perfil-h
     color: black;
     transition: 200ms;
 }
+
+section.direita div.home header.main div.usuario-utilites-header button.perfil-header:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #FAD100;
+}
