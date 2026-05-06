@@ -48,10 +48,12 @@ aside button.searchbox-nav{
     border-radius: 10px;
     border: 1px solid var(--border-color);
     height: 39px;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 8px;
     color: var(--text-ligther);
+    transition: 200ms;
 }
 
 aside button.searchbox-nav i{
@@ -84,4 +86,40 @@ aside button.searchbox-nav:hover{
 aside nav ul{
     display: flex;
     flex-direction: column;
+}
+
+aside nav ul li{
+    display: flex;
+    margin-top: 8px;
+    gap: 4px;
+    
+}
+
+aside nav ul li button{
+    border: 1px solid transparent;
+    padding: 13px 11px;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 39px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--nav-text-color);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 200ms;
+}
+
+aside nav ul li button.nav:hover{
+    background-color: #232527;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+aside nav ul li button.nav.ativo{
+    color: var(--text-bold-left);
+    background-color: var(--select-color);
+    border-left: 2px solid var(--select-border-color);
+    transition: 200ms;
 }
