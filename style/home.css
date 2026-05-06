@@ -1,10 +1,76 @@
 section.direita{
     width: 100vw;
-    padding: 80px;
+    padding: 32px 80px 40px 80px;
+    color: white;
     
 }
 
 section.direita div.home{
     background-color: var(--background-color);
-    
+}
+
+section.direita div.home header.main{
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+}
+
+section.direita div.home header.main div.searchbox{
+    padding: 16px;
+    background-color: var(--card-background);
+    border-radius: 18px;
+    border: 1px solid var(--border-color);
+    height: 48px;
+    width: 680px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-ligther);
+    transition: 200ms;
+}
+
+section.direita div.home header.main div.searchbox input{
+    all: unset;
+    background-color: transparent;
+    width: 100%;
+    font-family: var(--fonte2);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+section.direita div.home header.main div.usuario-utilites-header{
+    display: flex;
+    gap: 24px;
+}
+
+section.direita div.home header.main div.usuario-utilites-header button.notificacao{
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    color: #EFF2F5;
+    transition: 200ms;
+}
+
+section.direita div.home header.main div.usuario-utilites-header button.notificacao:hover{
+    border: 1px solid #f3c85b8a;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+section.direita div.home header.main div.usuario-utilites-header button.perfil-header{
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(140deg, #FAD100, #a18700);
+    border: 1px solid var(--border-color);
+    color: black;
+    transition: 200ms;
 }
