@@ -2,7 +2,6 @@ section.direita{
     width: 100vw;
     padding: 32px 80px 40px 80px;
     color: white;
-    
 }
 
 section.direita div.home{
@@ -70,12 +69,239 @@ section.direita div.home header.main div.usuario-utilites-header button.perfil-h
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(140deg, #FAD100, #a18700);
-    border: 1px solid var(--border-color);
+    border: 1px solid transparent;
     color: black;
     transition: 200ms;
 }
 
 section.direita div.home header.main div.usuario-utilites-header button.perfil-header:hover{
     cursor: pointer;
-    box-shadow: 0px 0px 10px #FAD100;
+    box-shadow: 0px 0px 10px #fad00049;
+}
+
+section.direita div.home main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.direita div.home main p.section-context{
+    font-size: 11px;
+    font-weight: 600;
+    font-family: var(--fonte2);
+    letter-spacing: 1.2px;
+    color: #FAD100;
+}
+
+section.direita div.home main div.titulo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+section.direita div.home main div.titulo-container h1{
+    width: 780px;
+    font-size: 44px;
+    font-family: var(--fonte1);    
+    margin-top: 8px;
+    letter-spacing: -1.7px;
+    font-weight: 800;
+}
+
+section.direita div.home main div.titulo-container div.numero-registros-albuns-container{
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--fonte2);
+}
+
+section.direita div.home main div.titulo-container div.numero-registros-albuns-container i {
+    color: #FAD100;
+}
+
+section.direita div.home main div.titulo-container div.numero-registros-albuns-container p{
+    color: var(--text-ligther);
+}
+
+section.direita div.home main div.trending-container{
+    margin-top: 48px;
+}
+
+section.direita div.home main div.trending-container h2.treding{
+    font-family: var(--fonte1);
+    font-size: 24px;
+    font-weight: 700;
+    color: #EFF2F5;
+}
+
+section.direita div.home main div.trending-container p.movimentacao-preco{
+    font-size: 14px;
+    font-family: var(--fonte2);
+    color: var(--text-ligther);
+    font-weight: 400;
+}
+
+section.direita div.home main div.trending-container div.trending-list{
+    width: 1520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+section.direita div.home main div.trending-container div.trending-list div.card{
+    width: 280px;
+    height: 397px;
+}
+
+div.card{
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    transition: 100ms;
+}
+
+div.card:hover{
+    transform: scale(1.02);
+    transform: translate(0%, -2%);
+    cursor: pointer;
+    border: 1px solid #f3c85b8a;
+    transition: 100ms;
+}
+
+
+
+div.card div.img{
+    height: 278px;
+    padding: 12px;
+    background-image: url('https://m.media-amazon.com/images/I/51UtWpxbNYL._UF1000,1000_QL80_.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 90%, transparent 100%)
+   
+}
+
+div.img.hover{
+    background-size: 110%;
+}
+
+div.card div.img div.card-information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+div.card div.img div.card-information div.format{
+    background-color: #0a0b0cd8;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-family: var(--fonte2);
+    font-size: 10px;
+}
+
+div.card div.img div.card-information button.wantlist{
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+    background-color: #0a0b0cd8;
+    color: #EFF2F5;
+    font-weight: 200;
+}
+
+div.card div.album-information{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 17px;
+}
+
+div.card div.album-information div.name-year{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.card div.album-information div.name-year p.nome{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--fonte1);
+}
+
+div.card div.album-information div.name-year p.ano{
+    font-size: 10px;
+    font-family: var(--fonte2);
+    font-weight: 400;
+    color: var(--text-ligther);
+}
+
+div.card div.album-information p.artitas-nome{
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--fonte1);
+    color: var(--text-ligther);
+}
+
+div.card div.card-marketplace{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 17px 0px 17px;
+}
+
+div.card div.card-marketplace p.classificacao{
+    font-family: var(--fonte2);
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-ligther);
+    padding-top: 9px;
+    border-top: 1px solid var(--border-color);
+}
+
+div.card div.card-marketplace div.preco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.card div.card-marketplace div.preco p.preco_card_numero{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--fonte2);
+    color: #FAD100;
+}
+
+div.card div.card-marketplace div.preco div.movimentacao{
+    display: flex;
+    font-size: 12px;
+    font-family: var(--fonte2);
+    gap: 4px;
+    align-items: center;
+    color: var(--up-color);
+}
+
+.bold{
+    background-image: linear-gradient(to right, var(--text-bold-left), var(--text-bold-right));
+  
+  /* Recorta o fundo para o formato do texto */
+    -webkit-background-clip: text;
+     background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
