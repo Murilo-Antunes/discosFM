@@ -189,9 +189,6 @@ div.card div.img{
    
 }
 
-div.img.hover{
-    background-size: 110%;
-}
 
 div.card div.img div.card-information{
     display: flex;
