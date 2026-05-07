@@ -44,3 +44,19 @@ settings.addEventListener('click', function() {
     marketplace.classList.remove("ativo");
     settings.classList.add("ativo");
 });
+
+
+
+//pega todos os elementos html com a classe card em coloca em uma NodeList
+const card = document.querySelectorAll('.card');
+
+//para cada elemento card em card ele retorna no callback card
+card.forEach(card =>{
+
+    //para cada card ele pega o elemento card e acha o filho de classe img dentro dele
+    const alvo = card.querySelector('.img');
+
+    card.addEventListener('mouseenter', () => alvo.classList.add('hover'));
+
+    card.addEventListener('mouseleave', () => alvo.classList.remove('hover'));
+})

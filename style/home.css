@@ -169,7 +169,6 @@ div.card:hover{
     transform: translate(0%, -2%);
     cursor: pointer;
     border: 1px solid #f3c85b8a;
-    transition: 100ms;
 }
 
 
@@ -177,18 +176,22 @@ div.card:hover{
 div.card div.img{
     height: 278px;
     padding: 12px;
-    background-image: url('https://m.media-amazon.com/images/I/51UtWpxbNYL._UF1000,1000_QL80_.jpg');
-    background-size: cover;
+    background-image: url('https://cdn-images.dzcdn.net/images/cover/05a186e0a859a36f9cd51cdae2158fe1/0x1900-000000-80-0-0.jpg');
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    transition: background-size 800ms;
 
     -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 90%, transparent 100%)
    
 }
 
+div.card div.img.hover{
+    background-size: 110%;
+}
 
 div.card div.img div.card-information{
     display: flex;
