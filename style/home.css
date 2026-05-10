@@ -2,6 +2,7 @@ section.direita{
     width: 100vw;
     padding: 32px 80px 40px 80px;
     color: white;
+    max-width: 2000px;
 }
 
 section.direita div.home{
@@ -160,7 +161,6 @@ div.card{
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
     transition: 100ms;
 }
 
@@ -293,6 +293,63 @@ div.card div.card-marketplace div.preco div.movimentacao{
     gap: 4px;
     align-items: center;
     color: var(--up-color);
+}
+
+
+section.direita div.home main article.explorar-container div.context-explorar{
+    display: flex;
+    margin-top: 57px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+}
+
+section.direita div.home main article.explorar-container div.context-explorar div.explorar-title h1{
+    font-family: var(--fonte1);
+    font-size: 24px;
+    font-weight: 700;
+    color: #EFF2F5;
+    letter-spacing: -0.48px;
+}
+
+section.direita div.home main article.explorar-container div.context-explorar div.explorar-title p{
+    font-family: var(--fonte2);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-ligther);
+}
+
+section.direita div.home main article.explorar-container div.context-explorar div.explorar-title div.filtro{
+    display: flex;
+    flex-direction: column;
+}
+
+section.direita div.home main article.explorar-container div.context-explorar div.filtro button.drop-filter{
+    width: 100px;
+    height: 34px;
+    background-color: #060708;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: #EFF2F5;
+    font-family: var(--fonte2);
+    cursor: pointer;
+}
+
+section.direita div.home main article.explorar-container div.explorar-list{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+section.direita div.home main article.explorar-container div.explorar-list div.card{
+    margin-top: 20px;
+    max-width: 363px;
+    height: 482px;
+}
+
+section.direita div.home main article.explorar-container div.explorar-list div.card div.img{
+    height: 353px;
 }
 
 .bold{
