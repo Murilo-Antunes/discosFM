@@ -176,7 +176,6 @@ div.card:hover{
 div.card div.img{
     height: 278px;
     padding: 12px;
-    background-image: url('https://cdn-images.dzcdn.net/images/cover/05a186e0a859a36f9cd51cdae2158fe1/0x1900-000000-80-0-0.jpg');
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -189,7 +188,7 @@ div.card div.img{
    
 }
 
-div.card div.img.hover{
+div.card div.img:hover{
     background-size: 110%;
 }
 
@@ -202,12 +201,13 @@ div.card div.img div.card-information{
 
 div.card div.img div.card-information div.format{
     background-color: #0a0b0cd8;
-    width: 30px;
+    width: fit-content;
     height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    padding: 5px 10px;
     font-family: var(--fonte2);
     font-size: 10px;
 }
@@ -271,6 +271,7 @@ div.card div.card-marketplace p.classificacao{
     color: var(--text-ligther);
     padding-top: 9px;
     border-top: 1px solid var(--border-color);
+    margin-bottom: 7px;
 }
 
 div.card div.card-marketplace div.preco{
