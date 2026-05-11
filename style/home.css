@@ -353,6 +353,38 @@ section.direita div.home main article.explorar-container div.explorar-list div.c
     height: 353px;
 }
 
+section.direita div.home main article.explorar-container div.troca-pagina{
+    margin-top: 21px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+section.direita div.home main article.explorar-container div.troca-pagina div.button-troca-pagina{
+    display: flex;
+    gap: 10px;
+}
+
+section.direita div.home main article.explorar-container div.troca-pagina div.button-troca-pagina button{
+    width: 36px;
+    height: 36px;
+    background-color: #060708;
+    border: 1px solid var(--border-color);
+    color: #EFF2F5;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 100ms;
+}
+
+section.direita div.home main article.explorar-container div.troca-pagina div.button-troca-pagina button:hover{
+    transform: scale(1.05);
+}
+
+section.direita div.home main article.explorar-container div.troca-pagina  p{
+    color: var(--text-ligther);
+    font-family: var(--fonte2);
+}
+
 .bold{
     background-image: linear-gradient(to right, var(--text-bold-left), var(--text-bold-right));
   

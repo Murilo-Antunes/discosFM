@@ -108,7 +108,7 @@
                     <h2 class="treding">Discos em alta</h2>
                     <p class="movimentacao-preco">Últimas 24h · movimentação</p>
 
-                    <div class="trending-list">
+                    <div id="trending-list" class="trending-list">
 
                         <div class="card">
                             <div class="img">
@@ -174,7 +174,7 @@
                     </div>
                 </div>
 
-                <article class="explorar-container">
+                <article id="explorar-container" class="explorar-container">
                     <div class="context-explorar">
                         <div class="explorar-title">
                             <h1>Descubra Novos Albuns</h1>
@@ -198,10 +198,14 @@
                     </div>
 
                     <div class="troca-pagina">
-                        <button id="btn-next" class="btn-next"> -> </button>
-                        <button id="btn-prev" class="btn-prev"> <- </button>
+                        <div class="button-troca-pagina">
+                            <a href="#explorar-container"><button id="btn-prev" class="btn-prev"> < </button></a>
+                            <a href="#explorar-container"><button id="btn-next" class="btn-next"> > </button></a>
+                        </div>
+                        <p id="info" class="info"> Página 5 de 10</p>
                     </div>
                 </article>
+                
             </main>
         </div>
     </section>
