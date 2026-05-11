@@ -47,7 +47,7 @@ const renderizarTrending = (albums) =>{
                 <div class="card-information">
                     <div class="format"> <p>${album.format[1] ?? album.format[0]}</p> </div>
                         <button class="wantlist">
-                            <i class="fa-regular fa-heart"></i>
+                            <i id="coracao" class="fa-regular fa-heart unliked"></i>
                         </button>
                     </div>
                     </div>
@@ -87,7 +87,6 @@ const alterarInformacaoPaginas = () =>{
     document.getElementById('info').textContent = `Página ${paginaAtual} de ${totalPagina}`;
 }
 
-
 //cria os cards com innerHTML
 const renderizarAlbums = (albums) =>{
     const container = document.getElementById('explorer-list')
@@ -100,7 +99,7 @@ const renderizarAlbums = (albums) =>{
                 <div class="card-information">
                     <div class="format"> <p>${album.format[1] ?? album.format[0]}</p> </div>
                         <button class="wantlist">
-                            <i class="fa-regular fa-heart"></i>
+                            <i id="coracao" class="fa-regular fa-heart unliked"></i>
                         </button>
                     </div>
                     </div>
@@ -125,7 +124,6 @@ const renderizarAlbums = (albums) =>{
             </div>
     `).join('')
 }
-
 
 //altera a página atual ao clicar nos botões de página
 document.getElementById('btn-prev').addEventListener('click', () => {

@@ -382,12 +382,15 @@ section.direita div.home main article.explorar-container div.troca-pagina div.bu
 
 section.direita div.home main article.explorar-container div.troca-pagina div.button-troca-pagina button:hover{
     transform: scale(1.05);
+    border: 1px solid #f3c85b8a;
 }
 
 section.direita div.home main article.explorar-container div.troca-pagina  p{
     color: var(--text-ligther);
     font-family: var(--fonte2);
 }
+
+
 
 .bold{
     background-image: linear-gradient(to right, var(--text-bold-left), var(--text-bold-right));
