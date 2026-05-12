@@ -1,0 +1,187 @@
+div.card-selected header{
+    color: var(--text-ligther);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+div.card-selected header:hover{
+    color: var(--text-bold-left);
+}
+
+div.card-selected header p.voltar{
+    font-family: var(--fonte3);
+}
+
+
+div.card-selected main div.top{
+    display: flex;
+    margin-top: 24px;
+    gap: 40px;
+    max-width: 1420px;
+    max-height: 650px;
+}
+
+div.card-selected main div.top section.capa img{
+    width: 560px;
+    border-radius: 15px;
+}
+
+div.card-selected main div.top section.informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+div.card-selected main div.top section.informacoes div.introducao{
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+}
+
+div.card-selected main div.top section.informacoes div.introducao p.artista{
+    font-family: var(--fonte2);
+    color: var(--text-bold-left);
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+
+div.card-selected main div.top section.informacoes div.introducao h1.nome-album{
+    color: #EFF2F5;
+    font-weight: 800;
+    font-size: 60px;
+    font-family: var(--fonte1);
+}
+
+div.card-selected main div.top section.informacoes div.introducao div.status{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 14px;
+    font-family: var(--fonte2);
+}
+
+div.card-selected main div.top section.informacoes div.introducao div.status p.ponto{
+    height: fit-content;
+    color: var(--text-ligther);
+}
+
+div.card-selected main div.top section.informacoes div.introducao div.status p.ano{
+    color: var(--text-ligther);
+}
+
+div.card-selected main div.top section.informacoes div.introducao div.status p.pais{
+    color: var(--up-color);
+}
+
+div.card-selected main div.top section.informacoes div.introducao div.status p.rating span.estrela{
+    color: var(--text-bold-left);
+    font-weight: 700;
+}
+
+div.card-selected main div.top section.informacoes div.especificacoes{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+div.card-selected main div.top section.informacoes div.especificacoes div{
+    width: 400px;
+    background-color: var(--card-background);
+    padding: 15px 20px;
+}
+
+div.card-selected main div.top section.informacoes div.especificacoes h2{
+    font-family: var(--fonte2);
+    color: var(--text-ligther);
+    font-size: 10px;
+    text-align: left;
+    width: fit-content;
+}
+
+div.card-selected main div.top section.informacoes div.especificacoes h1{
+    font-family: var(--fonte1);
+    color: #EFF2F5;
+    font-size: 14px;
+    margin-top: 4px;
+    width: fit-content;
+}
+
+div.card-selected main div.top section.informacoes div.especificacoes div.label{
+    border-top-left-radius: 16px;
+    border: 1px solid var(--border-color)
+}
+
+div.card-selected main div.top section.informacoes div.especificacoes div.genero{
+    border-top-right-radius: 16px;
+    border: 1px solid var(--border-color)
+}
+
+div.card-selected main div.top section.informacoes div.especificacoes div.formato{
+    border-bottom-left-radius: 16px;
+    border: 1px solid var(--border-color)
+}
+
+div.card-selected main div.top section.informacoes div.especificacoes div.qualidade{
+    border-bottom-right-radius: 16px;
+    border: 1px solid var(--border-color)
+}
+
+div.card-selected main div.top section.informacoes div.estilos{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+div.card-selected main div.top section.informacoes div.estilos h2{
+    font-size: 12px;
+    font-family: var(--fonte2);
+    color: var(--text-ligther);
+    letter-spacing: 1.2px;
+}
+
+div.card-selected main div.top section.informacoes div.estilos div.estilo-container{
+    padding: 5px 11px;
+    color: var(--text-bold-left);
+    background-color: var(--select-color);
+    border: 1px solid var(--select-border-color);
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: var(--fonte2);
+}
+
+div.card-selected main div.top section.informacoes div.marketplace-card{
+    padding: 24px;
+    border-radius: 16px;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+}
+
+div.card-selected main div.top section.informacoes div.marketplace-card div.top{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+div.card-selected main div.top section.informacoes div.marketplace-card div.top p{
+    font-family: var(--fonte2);
+    color: var(--up-color);
+    font-size: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1.1px;
+}
+
+div.card-selected main div.top section.informacoes div.marketplace-card div.top p.venda{
+    font-family: var(--fonte1);
+    color: #EFF2F5;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+div.card-selected main div.top section.informacoes div.marketplace-card div.top div.sacola{
+    color: var(--up-color);
+}

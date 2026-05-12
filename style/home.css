@@ -7,6 +7,7 @@ section.direita{
 
 section.direita div.home{
     background-color: var(--background-color);
+    display: none; 
 }
 
 section.direita div.home header.main{
