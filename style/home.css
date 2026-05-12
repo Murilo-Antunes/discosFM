@@ -164,7 +164,7 @@ div.card{
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    transition: 100ms;
+    transition: 200ms;
 }
 
 div.card:hover{
