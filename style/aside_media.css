@@ -1,0 +1,48 @@
+@media (max-width: 1199px) and (min-width: 768px) {
+    aside {
+        width: 80px;
+        min-width: 80px;
+        padding: 24px 8px;
+    }
+
+    aside header.side-menu {
+        gap: 8px;
+    }
+
+    aside header.side-menu div.p-header p.light {
+        display: none;
+    }
+
+    aside header.side-menu div.p-header p.marca {
+        font-size: 14px;
+    }
+
+    aside .pesquisa-rapida-link .searchbox-nav {
+        width: 100%;
+        justify-content: center;
+        padding: 13px 8px;
+    }
+
+    aside .pesquisa-rapida-link .searchbox-nav p.quick-search,
+    aside .pesquisa-rapida-link .searchbox-nav p.ctrl {
+        display: none;
+    }
+
+    aside nav ul {
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside nav ul li button.nav {
+        justify-content: center;
+        padding: 12px 0;
+        min-width: 56px;
+        min-height: 44px;
+    }
+
+    aside nav ul li button.nav .p-nav {
+        display: none;
+    }
+}

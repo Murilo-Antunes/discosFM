@@ -1,0 +1,74 @@
+@media (max-width: 767px) {
+    body {
+        flex-direction: column;
+    }
+
+    section.direita {
+        width: 100%;
+        padding: 16px;
+    }
+
+    section.direita header.main {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    section.direita header.main form.searchbox {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section.direita header.main div.usuario-utilites-header {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    section.direita main div.titulo-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    section.direita main div.titulo-container h1 {
+        width: 100%;
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    section.direita main div.trending-container div.trending-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        width: 100%;
+    }
+
+    section.direita main article.explorar-container div.context-explorar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        width: 100%;
+    }
+
+    section.direita main article.explorar-container div.filtro,
+    section.direita main article.explorar-container div.filtragem-options {
+        width: 100%;
+    }
+
+    section.direita main article.explorar-container div.explorar-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        width: 100%;
+    }
+
+    section.direita main article.explorar-container div.troca-pagina {
+        align-items: center;
+    }
+
+    section.direita main article.explorar-container div.troca-pagina .button-troca-pagina {
+        justify-content: center;
+    }
+
+    section.direita main article.explorar-container div.troca-pagina p.info {
+        text-align: center;
+    }
+}

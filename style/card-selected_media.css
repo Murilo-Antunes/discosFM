@@ -1,0 +1,24 @@
+@media (max-width: 1199px) and (min-width: 768px) {
+    div.card-selected {
+        padding: 24px;
+    }
+
+    div.card-selected main div.top {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    div.card-selected main div.top section.capa img {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    div.card-selected main div.top section.informacoes {
+        width: 100%;
+    }
+
+    div.card-selected main section.tracklist table {
+        width: 100%;
+        min-width: 0;
+    }
+}
