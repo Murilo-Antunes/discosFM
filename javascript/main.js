@@ -9,6 +9,10 @@ let totalPagina;
 let resultadoPagina1 = []
 let statusPagina = 'home'
 let pesquisa = 'a'
+const headers = {
+  'Authorization': `Discogs token=${TOKEN}`,
+  'User-Agent': 'DiscosFM'
+};
 
 
 
@@ -18,7 +22,7 @@ const getAlbumPage = async (pagina = 1) =>{
 
     console.log(pesquisa)
     
-    const response = await fetch(`${BASE_URL}/database/search?q="${pesquisa}"&type=master&sort=want&sort_order=desc&per_page=20&page=${String(pagina)}&token=${TOKEN}`)
+    const response = await fetch(`${BASE_URL}/database/search?q="${pesquisa}"&type=master&sort=want&sort_order=desc&per_page=20&page=${String(pagina)}&token=${TOKEN}`, headers)
 
     const data = await response.json()
     
