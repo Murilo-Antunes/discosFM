@@ -1,3 +1,11 @@
+div.card-selected{
+    display: none;
+}
+
+div.card-selected.ativado{
+    display: block;
+}
+
 div.card-selected header{
     color: var(--text-ligther);
     display: flex;
@@ -6,6 +14,13 @@ div.card-selected header{
     cursor: pointer;
     transition: 150ms;
     width: fit-content;
+    view-transition-name: card-expansivel;
+    contain: layout style;
+}
+
+::view-transition-group(card-expansivel) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 div.card-selected header:hover{
@@ -133,11 +148,11 @@ div.card-selected main div.top section.informacoes div.especificacoes div.qualid
 
 div.card-selected main div.top section.informacoes div.estilos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 8px;
 }
 
-div.card-selected main div.top section.informacoes div.estilos h2{
+div.card-selected main div.top section.informacoes  h2{
     font-size: 12px;
     font-family: var(--fonte2);
     color: var(--text-ligther);

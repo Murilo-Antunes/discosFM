@@ -7,7 +7,11 @@ section.direita{
 
 section.direita div.home{
     background-color: var(--background-color);
-    display: none; 
+    display: block; 
+}
+
+section.direita div.home.desativado{
+    display: none;
 }
 
 section.direita div.home header.main{
@@ -166,6 +170,13 @@ div.card{
     display: flex;
     flex-direction: column;
     transition: 200ms;
+    view-transition-name: card-expansivel;
+    contain: layout style;
+}
+
+::view-transition-group(card-expansivel) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 div.card:hover{

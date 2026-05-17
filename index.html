@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
     <title>DiscosFM</title>
 
     <link rel="stylesheet" href="style/reset.css">
@@ -17,9 +17,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 
     <script src="javascript/main.js" defer></script>
     <script src="javascript/estilo.js" defer></script>
+    <script src="javascript/card.js" defer></script>
     
     
 </head>
@@ -80,7 +82,7 @@
     </aside>
 
     <section class="direita">
-        <div class="home">
+        <div id="home-container" class="home">
             <header class="main">
                 <div class="searchbox">
                     <i class="fa-brands fa-sistrix"></i>
@@ -212,117 +214,7 @@
             </main>
         </div>
 
-        <div class="card-selected">
-            <header>
-                <i class="fa-solid fa-arrow-left"></i> 
-                <p class="voltar">Voltar</p>
-            </header>
-
-            <main>
-                <div class="top">
-                    <section class="capa">
-                        <img src="https://upload.wikimedia.org/wikipedia/pt/3/3b/Dark_Side_of_the_Moon.png" alt="">
-                    </section>
-
-                    <section class="informacoes">
-                        <div class="introducao">
-                            <p class="artista">// Pink Floyd</p>
-                            <h1 class="nome-album">Dark side of the moon</h1>
-
-                            <div class="status">
-                                <p class="ano">1973</p>
-                                <p class="ponto">.</p>
-                                <p class="pais">Inglaterra</p>
-                                <p class="ponto">.</p>
-                                <p class="rating"><span class="estrela">&#9733</span> 4.7</p>
-                            </div>
-                        </div>
-
-                        <div class="especificacoes">
-                            <div class="label">
-                                <h2>Label</h2>
-                                <h1>Pink Floyd Records</h1>
-                            </div>
-                            <div class="genero">
-                                <h2>genero</h2>
-                                <h1>Rock Progressivo</h1>
-                            </div>
-                            <div class="formato">
-                                <h2>formato</h2>
-                                <h1>Album</h1>
-                            </div>
-                            <div class="qualidade">
-                                <h2>Qualidade disco</h2>
-                                <h1>correta</h1>
-                            </div>
-                        </div>
-
-                        <div class="estilos">
-                            <h2>estilos</h2>
-                            <div class="estilo-container">
-                                <p>Rock Progressivo</p>
-                            </div>
-                        </div>
-
-                        <div class="marketplace-card">
-                            <div class="top">
-                                <div class="copias">
-                                    <p> ● MARKETPLACE</p>
-                                    <p class="venda">543 Cópias à Venda</p>
-                                </div>
-
-                                <div class="sacola">
-                                    <i class="fa-solid fa-bag-shopping"></i>
-                                </div>
-                            </div>
-
-                            <div class="bottom">
-                                <div class="preco-info">
-                                    <div class="low">
-                                        <p>low</p>
-                                        <p class="preco">$35</p>
-                                    </div>
-                                    <div class="median">
-                                        <p>median</p>
-                                        <p class="preco">$62</p>
-                                    </div>
-                                    <div class="high">
-                                        <p>high</p>
-                                        <p class="preco">$180</p>
-                                    </div>
-                                </div>
-
-                                <div class="comprar">
-                                    <div class="ver-copias"><p>Ver 543 copias</p></div>
-                                    <div class="icon"><i class="fa-regular fa-heart"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <section class="tracklist">
-                    <h1>Tracklist</h1>
-                    <div class="tabela">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td class="numero">#1</td>
-                                    <td class="play"><div class="icon-container"><i class="fa-solid fa-play"></i></div></td>
-                                    <td class="nome">Speak to me / breath</td>
-                                    <td class="tempo">3:58</td>
-                                </tr>
-                                <tr>
-                                    <td class="numero">#1</td>
-                                    <td class="play"><div class="icon-container"><i class="fa-solid fa-play"></div></i></td>
-                                    <td class="nome">Speak to me / breath</td>
-                                    <td class="tempo">3:58</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-            </main>
+        <div id="card-selected" class="card-selected">
         </div>
     </section>
 
