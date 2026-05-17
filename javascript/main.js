@@ -49,7 +49,7 @@ const renderizarTrending = (albums) =>{
     const top5 = ordenarAlbums(albums)
 
     trendigContainer.innerHTML = top5.map(album => `
-        <div class="card" onclick = "selecionarCard('${album.title}')">
+        <div class="card" onclick="selecionarCard(&quot;${encodeURIComponent(album.title)}&quot;)">
             <div class="img" style="
                 background-image: url('${album.cover_image}');  
             ">
@@ -103,7 +103,7 @@ const renderizarAlbums = (albums) =>{
     const container = document.getElementById('explorer-list')
 
     container.innerHTML = albums.map(album => `
-        <div class="card" onclick = "selecionarCard('${album.title}')">
+        <div class="card" onclick="selecionarCard(&quot;${encodeURIComponent(album.title)}&quot;)">
             <div class="img" style="
                 background-image: url('${album.cover_image}');  
             ">
@@ -147,5 +147,9 @@ document.getElementById('btn-prev').addEventListener('click', () => {
 document.getElementById('btn-next').addEventListener('click', () => {
     chamarFuncao(paginaAtual + 1);
 });
+
+const escaparTitulo = (titulo) => {
+    return titulo.replace(/'/g, "\\'").replace(/"/g, '&quot;')
+}
 
 chamarFuncao(1)

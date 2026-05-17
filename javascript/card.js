@@ -1,12 +1,14 @@
 
-const selecionarCard = async (titulo) =>{
+window.selecionarCard = async (titulo) =>{
+    console.log(titulo)
     let card_selected = document.getElementById('card-selected')
     let home = document.getElementById('home-container')
-
+    let tituloDecodificado = decodeURIComponent(titulo)
+    console.log(tituloDecodificado)
     home.classList.add('desativado')
     card_selected.classList.add('ativado')
 
-    let objetoID = await buscarID(titulo)
+    let objetoID = await buscarID(tituloDecodificado)
     let id = objetoID.results[0].master_id
     let pais = objetoID.results[0].country
     let label = objetoID.results[0].label[0]

@@ -68,7 +68,7 @@ div.card-selected main div.top section.informacoes div.introducao p.artista{
 div.card-selected main div.top section.informacoes div.introducao h1.nome-album{
     color: #EFF2F5;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 2.1vw;
     font-family: var(--fonte1);
 }
 
