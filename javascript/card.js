@@ -1,10 +1,8 @@
 
 window.selecionarCard = async (titulo) =>{
-    console.log(titulo)
     let card_selected = document.getElementById('card-selected')
     let home = document.getElementById('home-container')
     let tituloDecodificado = decodeURIComponent(titulo)
-    console.log(tituloDecodificado)
     home.classList.add('desativado')
     card_selected.classList.add('ativado')
 

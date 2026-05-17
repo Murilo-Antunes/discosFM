@@ -19,7 +19,6 @@ const headers = {
 const getAlbumPage = async (pagina = 1) =>{
     if(pesquisaInput.value != "")
         pesquisa = String(pesquisaInput.value)
-
     console.log(pesquisa)
     
     const response = await fetch(`${BASE_URL}/database/search?q="${pesquisa}"&type=master&sort=want&sort_order=desc&per_page=20&page=${String(pagina)}&token=${TOKEN}`, headers)
@@ -42,6 +41,10 @@ const chamarFuncao = async (pagina) =>{ //provisório
     renderizarAlbums(dados.results)
     verificarPagina(dados)
     alterarInformacaoPaginas()
+
+    if(pesquisaInput.value != "") {
+        document.getElementById('explorer-list').scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
 }
 
 const renderizarTrending = (albums) =>{
@@ -142,14 +145,8 @@ document.getElementById('btn-prev').addEventListener('click', () => {
         
 });
 
-
-
 document.getElementById('btn-next').addEventListener('click', () => {
     chamarFuncao(paginaAtual + 1);
 });
-
-const escaparTitulo = (titulo) => {
-    return titulo.replace(/'/g, "\\'").replace(/"/g, '&quot;')
-}
 
 chamarFuncao(1)
