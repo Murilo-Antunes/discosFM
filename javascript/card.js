@@ -75,7 +75,7 @@ const renderizarAlbum = (album, pais, label, format) => {
                             <h1 class="nome-album">${album.title}</h1>
 
                             <div class="status">
-                                <p class="ano">${album.year}</p>
+                                <p class="ano">${album.year ?? '-'}</p>
                                 <p class="ponto">.</p>
                                 <p class="pais">${pais}</p>
                                 <p class="ponto">.</p>

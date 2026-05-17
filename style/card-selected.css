@@ -37,11 +37,12 @@ div.card-selected main div.top{
     margin-top: 24px;
     gap: 40px;
     max-width: 1420px;
-    max-height: 650px;
+
 }
 
 div.card-selected main div.top section.capa img{
     width: 565px;
+    height: auto;
     border-radius: 15px;
 }
 

@@ -56,7 +56,7 @@ const chamarFuncao = async (pagina = 1) => {
     atualizarBadgeFiltro()
 
     if (pesquisaInput.value != '') {
-        document.getElementById('trending-list').scrollIntoView({ behavior: 'smooth', block: 'start' })
+        document.getElementById('explorar-container').scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
 }
 
