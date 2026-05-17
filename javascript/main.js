@@ -60,7 +60,7 @@ const chamarFuncao = async (pagina = 1) => {
     }
 }
 
-// popula as opções do dropdown com base nos resultados
+
 const popularFiltros = (albums) => {
     const generos  = [...new Set(albums.flatMap(a => a.genre  ?? []))]
     const estilos  = [...new Set(albums.flatMap(a => a.style  ?? []))]
@@ -95,7 +95,7 @@ const renderizarOpcoesFiltro = (containerId, opcoes, chave) => {
 }
 
 window.selecionarFiltro = (chave, valor, btn) => {
-    // toggle: clicou no ativo → remove
+
     if (filtrosAtivos[chave] === valor) {
         filtrosAtivos[chave] = null
     } else {
