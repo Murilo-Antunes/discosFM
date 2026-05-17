@@ -20,7 +20,7 @@ section.direita div.home header.main{
     gap: 24px;
 }
 
-section.direita div.home header.main div.searchbox{
+section.direita div.home header.main form.searchbox{
     padding: 16px;
     background-color: var(--card-background);
     border-radius: 18px;
@@ -34,7 +34,7 @@ section.direita div.home header.main div.searchbox{
     transition: 200ms;
 }
 
-section.direita div.home header.main div.searchbox input{
+section.direita div.home header.main form.searchbox input{
     all: unset;
     background-color: transparent;
     width: 100%;

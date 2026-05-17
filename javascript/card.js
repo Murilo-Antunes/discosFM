@@ -55,7 +55,7 @@ const buscarMaster = async (id) =>{
 const renderizarAlbum = (album, pais, label, format) => {
     const card_selected = document.getElementById('card-selected')
     let contador = 1
-    console.log(album)
+
 
     card_selected.innerHTML = `
         <header onclick="selecionarHome()">
@@ -123,15 +123,15 @@ const renderizarAlbum = (album, pais, label, format) => {
                                 <div class="preco-info">
                                     <div class="low">
                                         <p>low</p>
-                                        <p class="preco">$${album.lowest_price}</p>
+                                        <p class="preco">$${album.lowest_price ?? '0'}</p>
                                     </div>
                                     <div class="median">
                                         <p>median</p>
-                                        <p class="preco">$${album.lowest_price+30.50}</p>
+                                        <p class="preco">$${album.lowest_price+30.50 ?? '0'}</p>
                                     </div>
                                     <div class="high">
                                         <p>high</p>
-                                        <p class="preco">$${album.lowest_price+100.14}</p>
+                                        <p class="preco">$${album.lowest_price+100.14 ?? '0'}</p>
                                     </div>
                                 </div>
 

@@ -2,26 +2,32 @@
 
 const TOKEN = 'OSeechwtEXSIKEvoVSyKYbLbXgWAdtLJpZngdQTb';
 const BASE_URL = 'https://api.discogs.com';
+const pesquisaInput = document.getElementById('search')
 
 let paginaAtual = 1;
 let totalPagina;
 let resultadoPagina1 = []
+let statusPagina = 'home'
+let pesquisa = 'a'
+
+
 
 const getAlbumPage = async (pagina = 1) =>{
+    if(pesquisaInput.value != "")
+        pesquisa = String(pesquisaInput.value)
+
+    console.log(pesquisa)
     
-    const response = await fetch(`${BASE_URL}/database/search?type=master&sort=have&sort_order=desc&per_page=20&page=${String(pagina)}&token=${TOKEN}`)
+    const response = await fetch(`${BASE_URL}/database/search?q="${pesquisa}"&type=master&sort=want&sort_order=desc&per_page=20&page=${String(pagina)}&token=${TOKEN}`)
 
     const data = await response.json()
-
-    paginaAtual = data.pagination.page
-    totalPagina = data.pagination.pages
+    
 
     return data
 }
 
 const chamarFuncao = async (pagina) =>{ //provisório
-
-    const dados = await getAlbumPage(pagina)
+    let dados = await getAlbumPage(pagina)
 
 
     if(pagina == 1){
@@ -30,9 +36,8 @@ const chamarFuncao = async (pagina) =>{ //provisório
     }
 
     renderizarAlbums(dados.results)
-    verificarPagina()
+    verificarPagina(dados)
     alterarInformacaoPaginas()
-
 }
 
 const renderizarTrending = (albums) =>{
@@ -54,7 +59,7 @@ const renderizarTrending = (albums) =>{
                         <div class="album-information">
                             <div class="name-year">
                                 <p class="nome">${album.title.split('-')[1].trim()}</p>
-                                <p class="ano">${album.year}</p>
+                                <p class="ano">${album.year ?? '-'}</p>
                             </div>
                             <p class="artitas-nome">${album.title.split('-')[0].trim()}</p>
                         </div>
@@ -78,7 +83,9 @@ const ordenarAlbums = (albums) =>{
 }
 
 //desabilita modificação de páginas inválida
-function verificarPagina() {
+function verificarPagina(data) {
+    paginaAtual = data.pagination.page
+    totalPagina = data.pagination.pages
     document.getElementById('btn-prev').disabled = paginaAtual <= 1;
     document.getElementById('btn-next').disabled = paginaAtual >= totalPagina;
 }
@@ -106,7 +113,7 @@ const renderizarAlbums = (albums) =>{
                         <div class="album-information">
                             <div class="name-year">
                                 <p class="nome">${album.title.split('-')[1].trim()}</p>
-                                <p class="ano">${album.year}</p>
+                                <p class="ano">${album.year ?? '-'}</p>
                             </div>
                             <p class="artitas-nome">${album.title.split('-')[0].trim()}</p>
                         </div>
@@ -128,7 +135,10 @@ const renderizarAlbums = (albums) =>{
 //altera a página atual ao clicar nos botões de página
 document.getElementById('btn-prev').addEventListener('click', () => {
     chamarFuncao(paginaAtual - 1);
+        
 });
+
+
 
 document.getElementById('btn-next').addEventListener('click', () => {
     chamarFuncao(paginaAtual + 1);
