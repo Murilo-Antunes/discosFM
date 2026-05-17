@@ -550,3 +550,106 @@ section.direita div.home main article.explorar-container div.troca-pagina  p{
         display: none;
     }
 }
+
+div.filtro {
+    position: relative;
+}
+
+div.filtro-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    width: 280px;
+    background-color: #121415;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 16px;
+    z-index: 100;
+    flex-direction: column;
+    gap: 16px;
+}
+
+div.filtro-dropdown.aberto {
+    display: flex;
+}
+
+div.filtro-dropdown div.filtro-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.filtro-dropdown div.filtro-header p {
+    font-family: var(--fonte1);
+    font-weight: 700;
+    font-size: 14px;
+    color: #EFF2F5;
+}
+
+button.limpar-filtros {
+    background: transparent;
+    border: none;
+    color: var(--text-bold-left);
+    font-family: var(--fonte2);
+    font-size: 11px;
+    cursor: pointer;
+}
+
+div.filtro-secao {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+p.filtro-secao-titulo {
+    font-family: var(--fonte2);
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    color: var(--text-ligther);
+    text-transform: uppercase;
+}
+
+ul.filtro-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+button.filtro-opcao {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--nav-text-color);
+    font-family: var(--fonte2);
+    font-size: 11px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+button.filtro-opcao:hover {
+    border-color: #f3c85b8a;
+    color: white;
+}
+
+button.filtro-opcao.ativo {
+    background-color: var(--select-color);
+    border-color: var(--select-border-color);
+    color: var(--text-bold-left);
+}
+
+span.filtro-badge {
+    background-color: var(--text-bold-left);
+    color: black;
+    font-size: 10px;
+    font-weight: 800;
+    font-family: var(--fonte2);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+}

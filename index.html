@@ -122,15 +122,33 @@
                             <h1>Descubra Novos Albuns</h1>
                             <p>Com base nos seus gostos</p>
                         </div>
-                        <div class="filtro">
-                            <button class="drop-filter">
-                                    <i class="fa-solid fa-sliders"></i>
-                                    Filtro
+                        <div id="filtro-wrapper" class="filtro">
+                            <button class="drop-filter" onclick="toggleFiltroDropdown()">
+                                <i class="fa-solid fa-sliders"></i>
+                                Filtro
+                                <span id="filtro-badge" class="filtro-badge" style="display:none">0</span>
                             </button>
 
-                            <div class="filtragem-options">
-                                <ul class="lista-filtros">
-                                </ul>
+                            <div id="filtro-dropdown" class="filtro-dropdown">
+                                <div class="filtro-header">
+                                    <p>Filtros</p>
+                                    <button onclick="limparFiltros()" class="limpar-filtros">Limpar tudo</button>
+                                </div>
+
+                                <div class="filtro-secao">
+                                    <p class="filtro-secao-titulo">Gênero</p>
+                                    <ul id="filtro-genre" class="filtro-lista"></ul>
+                                </div>
+
+                                <div class="filtro-secao">
+                                    <p class="filtro-secao-titulo">Década</p>
+                                    <ul id="filtro-decade" class="filtro-lista"></ul>
+                                </div>
+
+                                <div class="filtro-secao">
+                                    <p class="filtro-secao-titulo">Estilo</p>
+                                    <ul id="filtro-style" class="filtro-lista"></ul>
+                                </div>
                             </div>
                         </div>
                     </div>
